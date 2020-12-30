@@ -38,7 +38,7 @@ public class PlayerJoystickController : MonoBehaviour
     
     private void FixedUpdate()
     {
-        Vector3 dir = new Vector3(Joystick.Horizontal, Rigidbody.velocity.y / 10 , Joystick.Vertical);
-        Rigidbody.velocity = dir * (speed * Time.fixedDeltaTime);
+        Vector3 dir = new Vector3(Joystick.Horizontal, 0, 0);
+        transform.position += dir * (speed * Time.fixedDeltaTime);
     }
 }

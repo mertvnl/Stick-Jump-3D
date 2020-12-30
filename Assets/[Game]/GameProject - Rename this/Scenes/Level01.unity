@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c189b4c2a60b6479bb5a2960b087c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 500
+  speed: 10
   joystick: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
@@ -413,6 +413,7 @@ GameObject:
   - component: {fileID: 8262020133704894552}
   - component: {fileID: 8074947527515773150}
   - component: {fileID: 14}
+  - component: {fileID: 919132147488442648}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -420,6 +421,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132147488442648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147488442647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f9650a255301d4faf71615e351b7e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 500
 --- !u!4 &950736391209947518
 Transform:
   m_ObjectHideFlags: 0
@@ -1546,13 +1560,27 @@ GameObject:
   - component: {fileID: 8993284040564217154}
   - component: {fileID: 8993284040564217155}
   - component: {fileID: 8993284040564217156}
+  - component: {fileID: 8993284040564217159}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8993284040564217159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8993284040564217158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8300f59c42c2614b9d4d9eeb51e1d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickSizeToGain: 0.2
 --- !u!4 &8993284041547906227
 Transform:
   m_ObjectHideFlags: 0
