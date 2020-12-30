@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16b46e20-50aa-4069-aef3-d8663787478d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/CurrentLevelPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ScriptableObjects/GameData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/EndlessRunner-MobilOyunBootCamp-Final/Assets/Kodluyoruz/Projects/EndlessRunner/Scripts/Managers/ObstacleManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/Core/Editor/ScriptableObjectCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ThirdPartyTools/ToolbarScene/Editor/SceneSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/Core/Systems/CharacterControllerSystem/Joysticks/PlayerJoystickController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/TapToStartPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/Core/Editor/InitializeScenes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/TapToStartButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/InitManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/EndlessRunner-MobilOyunBootCamp-Final/Assets/Kodluyoruz/Projects/EndlessRunner/Scripts/ScriptableObjects/Level.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/EndlessRunner-MobilOyunBootCamp-Final/Assets/Kodluyoruz/Projects/EndlessRunner/Scripts/Managers/LevelManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/EndlessRunner-MobilOyunBootCamp-Final/Assets/Kodluyoruz/Projects/EndlessRunner/Scripts/ScriptableObjects/DifficulityData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/EndlessRunner-MobilOyunBootCamp-Final/Assets/Kodluyoruz/Projects/EndlessRunner/Scripts/Object/TrackObject.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Utilities/Singleton.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Editor/ScriptableObjectCreator.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/LevelData.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Level.cs" />
+      <option value="$PROJECT_DIR$/Assets/ThirdPartyTools/ToolbarScene/Editor/SceneSwitcher.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Editor/InitializeScenes.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/InitManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/Manager.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/UI/LevelLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ScriptableObjects/GameData.cs" />
+      <option value="$PROJECT_DIR$/Assets/ThirdPartyTools/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/UI/Panel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UI/Panel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/UI/MainMenuPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/CharacterControllerSystem/Joysticks/PlayerJoystickController.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/UI/MainMenuStartButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/CurrentLevel.cs" />
+      <option value="$PROJECT_DIR$/Assets/NextLevel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/LevelProgressBarText.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/LevelProgressBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/ThirdPartyTools/Joystick Pack/Scripts/Base/Joystick.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/LevelLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/EventManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/TapToStartPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/MainMenuStartButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/Panel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/CurrentLevelPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/TapToStartButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/LevelLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/LevelManager.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1mJTSZahGbveUnVeVflYrY2em4z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34991798" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="23620">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="23620" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16b46e20-50aa-4069-aef3-d8663787478d" name="Default Changelist" comment="" />
+      <created>1609210697877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609210697877</updated>
+      <workItem from="1609210703359" duration="29403000" />
+      <workItem from="1609286979958" duration="14000" />
+      <workItem from="1609287094739" duration="401000" />
+      <workItem from="1609287580691" duration="256000" />
+      <workItem from="1609288091626" duration="15715000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

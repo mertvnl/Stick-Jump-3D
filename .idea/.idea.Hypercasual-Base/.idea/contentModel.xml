@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Mert\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Mert\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Hypercasual-Base.-875945053.00" t="ExcludeRecursive" />
+    <e p="D:\UnityProjects\Hypercasual-Base" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="[Game]" t="Include">
+          <e p="Core" t="Include">
+            <e p="Editor" t="Include">
+              <e p="InitializeScenes.cs" t="Include" />
+              <e p="ScriptableObjectCreator.cs" t="Include" />
+            </e>
+            <e p="Systems" t="Include">
+              <e p="CharacterControllerSystem" t="Include">
+                <e p="Joysticks" t="Include">
+                  <e p="PlayerJoystickController.cs" t="Include" />
+                </e>
+              </e>
+              <e p="UISystem" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="CurrentLevel.cs" t="Include" />
+                  <e p="CurrentLevelPanel.cs" t="Include" />
+                  <e p="CurrentLevelPanelText.cs" t="Include" />
+                  <e p="LevelLoader.cs" t="Include" />
+                  <e p="LevelProgressBar.cs" t="Include" />
+                  <e p="LevelProgressBarText.cs" t="Include" />
+                  <e p="MainMenuPanel.cs" t="Include" />
+                  <e p="MainMenuStartButton.cs" t="Include" />
+                  <e p="NextLevel.cs" t="Include" />
+                  <e p="Panel.cs" t="Include" />
+                  <e p="TapToStartButton.cs" t="Include" />
+                  <e p="TapToStartPanel.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Utilities" t="Include">
+              <e p="Singleton.cs" t="Include" />
+            </e>
+          </e>
+          <e p="GameProject - Rename this" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Managers" t="Include">
+                <e p="EventManager.cs" t="Include" />
+                <e p="GameManager.cs" t="Include" />
+                <e p="InitManager.cs" t="Include" />
+                <e p="LevelManager.cs" t="Include" />
+                <e p="Manager.cs" t="Include" />
+              </e>
+              <e p="ScriptableObjects" t="Include">
+                <e p="GameData.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="Readme.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ThirdPartyTools" t="Include">
+          <e p="Joystick Pack" t="Include">
+            <e p="Examples" t="Include">
+              <e p="JoystickPlayerExample.cs" t="Include" />
+              <e p="JoystickSetterExample.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Base" t="Include">
+                <e p="Joystick.cs" t="Include" />
+              </e>
+              <e p="Editor" t="Include">
+                <e p="DynamicJoystickEditor.cs" t="Include" />
+                <e p="FloatingJoystickEditor.cs" t="Include" />
+                <e p="JoystickEditor.cs" t="Include" />
+                <e p="VariableJoystickEditor.cs" t="Include" />
+              </e>
+              <e p="Joysticks" t="Include">
+                <e p="DynamicJoystick.cs" t="Include" />
+                <e p="FixedJoystick.cs" t="Include" />
+                <e p="FloatingJoystick.cs" t="Include" />
+                <e p="VariableJoystick.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Lean" t="Include">
+            <e p="Common" t="Include">
+              <e p="Documentation" t="Include">
+                <e p="LeanGuide.cs" t="Include" />
+              </e>
+              <e p="Examples" t="Include">
+                <e p="Fonts" t="Include">
+                  <e p="OFL.txt" t="Include" />
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="LeanLinkTo.cs" t="Include" />
+                  <e p="LeanUpgradeEventSystem.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="Alpha.shader" t="Include" />
+                  <e p="Object.shader" t="Include" />
+                  <e p="Skybox.shader" t="Include" />
+                </e>
+              </e>
+              <e p="LeanCommon.asmdef" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="LeanHelper.cs" t="Include" />
+                <e p="LeanInput.cs" t="Include" />
+                <e p="LeanInspector.cs" t="Include" />
+              </e>
+            </e>
+            <e p="READ ME.txt" t="Include" />
+            <e p="Touch" t="Include">
+              <e p="Examples" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="LeanDestroy.cs" t="Include" />
+                  <e p="LeanDragTrail.cs" t="Include" />
+                  <e p="LeanInfoText.cs" t="Include" />
+                  <e p="LeanPulseScale.cs" t="Include" />
+                  <e p="LeanSpawn.cs" t="Include" />
+                  <e p="LeanTouchEvents.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Extras" t="Include">
+                <e p="LeanDragCamera.cs" t="Include" />
+                <e p="LeanDragTranslate.cs" t="Include" />
+                <e p="LeanFingerData.cs" t="Include" />
+                <e p="LeanFingerDown.cs" t="Include" />
+                <e p="LeanFingerFilter.cs" t="Include" />
+                <e p="LeanFingerOld.cs" t="Include" />
+                <e p="LeanFingerSwipe.cs" t="Include" />
+                <e p="LeanFingerTap.cs" t="Include" />
+                <e p="LeanFingerUp.cs" t="Include" />
+                <e p="LeanFingerUpdate.cs" t="Include" />
+                <e p="LeanPath.cs" t="Include" />
+                <e p="LeanPinchScale.cs" t="Include" />
+                <e p="LeanPlane.cs" t="Include" />
+                <e p="LeanRoll.cs" t="Include" />
+                <e p="LeanScreenDepth.cs" t="Include" />
+                <e p="LeanSelect.cs" t="Include" />
+                <e p="LeanSelectable.cs" t="Include" />
+                <e p="LeanSelectableBehaviour.cs" t="Include" />
+                <e p="LeanSelectableGraphicColor.cs" t="Include" />
+                <e p="LeanSelectableRendererColor.cs" t="Include" />
+                <e p="LeanSelectableSpriteRendererColor.cs" t="Include" />
+                <e p="LeanSelectBase.cs" t="Include" />
+                <e p="LeanSwipeBase.cs" t="Include" />
+                <e p="LeanTwistRotate.cs" t="Include" />
+                <e p="LeanTwistRotateAxis.cs" t="Include" />
+              </e>
+              <e p="LeanTouch.asmdef" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="LeanFinger.cs" t="Include" />
+                <e p="LeanGesture.cs" t="Include" />
+                <e p="LeanSnapshot.cs" t="Include" />
+                <e p="LeanTouch.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Touch+" t="Include">
+              <e p="Examples" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="LeanFormatText.cs" t="Include" />
+                  <e p="LeanModifyFloat.cs" t="Include" />
+                  <e p="LeanModifyVector2.cs" t="Include" />
+                  <e p="LeanRandomEvents.cs" t="Include" />
+                </e>
+              </e>
+              <e p="LeanTouchPlus.asmdef" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="IDropHandler.cs" t="Include" />
+                <e p="LeanAnySelected.cs" t="Include" />
+                <e p="LeanChase.cs" t="Include" />
+                <e p="LeanChaseRigidbody.cs" t="Include" />
+                <e p="LeanChaseRigidbody2D.cs" t="Include" />
+                <e p="LeanConstrainLocalPosition.cs" t="Include" />
+                <e p="LeanConstrainScale.cs" t="Include" />
+                <e p="LeanConstrainToAxis.cs" t="Include" />
+                <e p="LeanConstrainToBox.cs" t="Include" />
+                <e p="LeanConstrainToCollider.cs" t="Include" />
+                <e p="LeanConstrainToColliders.cs" t="Include" />
+                <e p="LeanConstrainToDirection.cs" t="Include" />
+                <e p="LeanConstrainToOrthographic.cs" t="Include" />
+                <e p="LeanDragColorMesh.cs" t="Include" />
+                <e p="LeanDragDeformMesh.cs" t="Include" />
+                <e p="LeanDragLine.cs" t="Include" />
+                <e p="LeanDragSelect.cs" t="Include" />
+                <e p="LeanDragTranslateAlong.cs" t="Include" />
+                <e p="LeanDragTranslateRigidbody.cs" t="Include" />
+                <e p="LeanDragTranslateRigidbody2D.cs" t="Include" />
+                <e p="LeanDrop.cs" t="Include" />
+                <e p="LeanDropCount.cs" t="Include" />
+                <e p="LeanFingerDownCanvas.cs" t="Include" />
+                <e p="LeanFingerFlick.cs" t="Include" />
+                <e p="LeanFingerHeld.cs" t="Include" />
+                <e p="LeanFingerTapExpired.cs" t="Include" />
+                <e p="LeanFirstDown.cs" t="Include" />
+                <e p="LeanFirstDownCanvas.cs" t="Include" />
+                <e p="LeanFollow.cs" t="Include" />
+                <e p="LeanGestureToggle.cs" t="Include" />
+                <e p="LeanLastUp.cs" t="Include" />
+                <e p="LeanLastUpCanvas.cs" t="Include" />
+                <e p="LeanMaintainDistance.cs" t="Include" />
+                <e p="LeanManualFlick.cs" t="Include" />
+                <e p="LeanManualRotate.cs" t="Include" />
+                <e p="LeanManualSwipe.cs" t="Include" />
+                <e p="LeanManualTranslate.cs" t="Include" />
+                <e p="LeanManualTranslateRigidbody.cs" t="Include" />
+                <e p="LeanManualTranslateRigidbody2D.cs" t="Include" />
+                <e p="LeanManualVelocity.cs" t="Include" />
+                <e p="LeanManualVelocity2D.cs" t="Include" />
+                <e p="LeanMouseWheel.cs" t="Include" />
+                <e p="LeanMultiDirection.cs" t="Include" />
+                <e p="LeanMultiPinch.cs" t="Include" />
+                <e p="LeanMultiPull.cs" t="Include" />
+                <e p="LeanMultiSwipe.cs" t="Include" />
+                <e p="LeanMultiTap.cs" t="Include" />
+                <e p="LeanMultiTwist.cs" t="Include" />
+                <e p="LeanMultiUpdate.cs" t="Include" />
+                <e p="LeanMultiUpdateCanvas.cs" t="Include" />
+                <e p="LeanOrbit.cs" t="Include" />
+                <e p="LeanPinchCamera.cs" t="Include" />
+                <e p="LeanPitchYaw.cs" t="Include" />
+                <e p="LeanPitchYawAutoRotate.cs" t="Include" />
+                <e p="LeanPongBall.cs" t="Include" />
+                <e p="LeanReplayFinger.cs" t="Include" />
+                <e p="LeanRevertTransform.cs" t="Include" />
+                <e p="LeanRotateToPosition.cs" t="Include" />
+                <e p="LeanRotateToRigidbody2D.cs" t="Include" />
+                <e p="LeanSelectableBlock.cs" t="Include" />
+                <e p="LeanSelectableCount.cs" t="Include" />
+                <e p="LeanSelectableDial.cs" t="Include" />
+                <e p="LeanSelectableDragTorque.cs" t="Include" />
+                <e p="LeanSelectableDrop.cs" t="Include" />
+                <e p="LeanSelectablePressureScale.cs" t="Include" />
+                <e p="LeanSelectableSelected.cs" t="Include" />
+                <e p="LeanSelectableTime.cs" t="Include" />
+                <e p="LeanSelectionBox.cs" t="Include" />
+                <e p="LeanSelectSelf.cs" t="Include" />
+                <e p="LeanShape.cs" t="Include" />
+                <e p="LeanShapeDetector.cs" t="Include" />
+                <e p="LeanSpawnBetween.cs" t="Include" />
+                <e p="LeanSpawnWithFinger.cs" t="Include" />
+                <e p="LeanSwap.cs" t="Include" />
+                <e p="LeanSwipeEdge.cs" t="Include" />
+                <e p="LeanThresholdDelta.cs" t="Include" />
+                <e p="LeanThresholdPosition.cs" t="Include" />
+                <e p="LeanTwistCamera.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Plugins" t="Include">
+            <e p="Sirenix" t="Include">
+              <e p="Assemblies" t="Include">
+                <e p="link.xml" t="Include" />
+                <e p="Sirenix.OdinInspector.Attributes.xml" t="Include" />
+                <e p="Sirenix.OdinInspector.Editor.xml" t="Include" />
+                <e p="Sirenix.Serialization.Config.xml" t="Include" />
+                <e p="Sirenix.Utilities.Editor.xml" t="Include" />
+                <e p="Sirenix.Utilities.xml" t="Include" />
+              </e>
+              <e p="Odin Inspector" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="AssemblyImportSettingsAutomation.cs" t="Include" />
+                    <e p="BuildAOTAutomation.cs" t="Include" />
+                    <e p="EnsureOdinInspectorDefine.cs" t="Include" />
+                    <e p="FixBrokenUnityObjectWrapperDrawer.cs" t="Include" />
+                    <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef" t="Include" />
+                    <e p="SyncListDrawer.cs" t="Include" />
+                    <e p="SyncVarAttributeDrawer.cs" t="Include" />
+                    <e p="Vector2IntMinMaxAttributeDrawer.cs" t="Include" />
+                    <e p="VectorIntDrawers.cs" t="Include" />
+                    <e p="VectorIntPropertyResolvers.cs" t="Include" />
+                  </e>
+                  <e p="SerializedNetworkBehaviour.cs" t="Include" />
+                  <e p="Sirenix.OdinInspector.CompatibilityLayer.asmdef" t="Include" />
+                  <e p="VectorIntFormatters.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Readme.txt" t="Include" />
+            </e>
+          </e>
+          <e p="ToolbarScene" t="Include">
+            <e p="Editor" t="Include">
+              <e p="SceneSwitcher.cs" t="Include" />
+              <e p="ToolbarCallback.cs" t="Include" />
+              <e p="ToolbarExtender.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Hypercasual-Base.sln" t="IncludeFlat" />
+      <e p="LeanCommon.csproj" t="IncludeRecursive" />
+      <e p="LeanTouch.csproj" t="IncludeRecursive" />
+      <e p="LeanTouchPlus.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
