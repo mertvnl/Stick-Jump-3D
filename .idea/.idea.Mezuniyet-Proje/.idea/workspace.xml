@@ -12,8 +12,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ObstacleController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StickHolder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/CollectibleStick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/FallingStickController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StickPivotController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -37,10 +39,12 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ScriptableObjects/GameData.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ObstacleController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/FallingStickController.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/StickController.cs" />
       <option value="$PROJECT_DIR$/Assets/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/CollectibleStick.cs" />
+      <option value="$PROJECT_DIR$/Assets/StickHolder.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/StickController.cs" />
+      <option value="$PROJECT_DIR$/Assets/StickPivotController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOdzeaQoTNbyCOfU1nIhensvfu" />
@@ -87,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609368835751</updated>
       <workItem from="1609368840783" duration="38949000" />
-      <workItem from="1609438055394" duration="4023000" />
+      <workItem from="1609438055394" duration="14339000" />
     </task>
     <servers />
   </component>

@@ -78,6 +78,8 @@
             </e>
           </e>
         </e>
+        <e p="StickHolder.cs" t="Include" />
+        <e p="StickPivotController.cs" t="Include" />
         <e p="ThirdPartyTools" t="Include">
           <e p="Joystick Pack" t="Include">
             <e p="Examples" t="Include">
