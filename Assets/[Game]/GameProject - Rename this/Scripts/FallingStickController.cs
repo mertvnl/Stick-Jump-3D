@@ -26,6 +26,6 @@ public class FallingStickController : MonoBehaviour
         Debug.Log(transform.parent.transform.position.y);
         // Rigidbody.AddForce(Vector3.up * 200f);
         Rigidbody.AddForce(Vector3.back * 15f);
-        Destroy(transform.parent.gameObject, 2f);
+        Destroy(transform.parent.gameObject, 3f);
     }
 }

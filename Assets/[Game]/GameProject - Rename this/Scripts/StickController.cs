@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class StickController : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class StickController : MonoBehaviour
             StickUp();
         }
     }
+
     public void StickUp()
     {
         Vector3 newStickSize = new Vector3(0, stickSizeToGain, 0);
@@ -52,5 +54,6 @@ public class StickController : MonoBehaviour
             CreateFallingStick(other.gameObject.transform.position.y + GameManager.Instance.gameData.fallingStickSizeY / 2);
             Debug.Log(other.gameObject.transform.position.y);
         }
+        Debug.Log(other.gameObject.name);
     }
 }
