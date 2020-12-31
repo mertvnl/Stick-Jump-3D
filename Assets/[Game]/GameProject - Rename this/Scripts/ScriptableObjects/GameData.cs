@@ -24,6 +24,8 @@ public class GameData : ScriptableObject
 
     [Header("Joystick Data")] public Joystick currentJoystick;
 
-    [Header("Stick Data")] public StickController playerStick;
+    [Header("Stick Data")] public StickController playerStick; 
+    [ReadOnly]
+    public float fallingStickSizeY;
 
 }
