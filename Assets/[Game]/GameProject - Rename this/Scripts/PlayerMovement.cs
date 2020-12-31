@@ -22,8 +22,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (GameManager.Instance.isGameStarted)
         {
-            Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), Rigidbody.velocity.y / 10 , Input.GetAxis("Vertical"));
-            Rigidbody.velocity = Vector3.forward * (speed * Time.fixedDeltaTime);
+            Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), Rigidbody.velocity.y / 10 , 1);
+            Rigidbody.velocity = dir * (speed * Time.fixedDeltaTime);
         }
     }
 }
