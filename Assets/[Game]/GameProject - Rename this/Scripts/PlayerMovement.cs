@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : Singleton<PlayerMovement>
 {
     public float speed = 250f;
+    public bool canMove = true;
     private Rigidbody rigidbody;
     public Rigidbody Rigidbody
     {
@@ -20,7 +21,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
     }
     private void FixedUpdate()
     {
-        if (GameManager.Instance.isGameStarted)
+        if (GameManager.Instance.isGameStarted && canMove)
         {
             Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), Rigidbody.velocity.y / 10 , 1);
             Rigidbody.velocity = dir * (speed * Time.fixedDeltaTime);
@@ -29,11 +30,9 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     public void Jump()
     {
-        Debug.Log("jumping");
-        // Rigidbody.AddForce(Vector3.forward * (1000 * (TheStick.Instance.transform.localScale.y * Time.fixedDeltaTime)), ForceMode.Impulse);
-        // Rigidbody.AddForce(Vector3.up * (500 * (TheStick.Instance.transform.localScale.y * Time.fixedDeltaTime)), ForceMode.Impulse);
-        Rigidbody.AddForce(Vector3.up * 100 * TheStick.Instance.transform.localScale.y);
-        Rigidbody.AddForce(Vector3.forward * 10000 * TheStick.Instance.transform.localScale.y, ForceMode.Acceleration);
+        canMove = false;
+        Rigidbody.velocity = new Vector3(0,1,1) * TheStick.Instance.transform.localScale.y * 5;
+
         TheStick.Instance.isJumping = false;
     }
 }

@@ -46,10 +46,11 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/CollectibleStick.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/StickController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/FallingStickController.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStickController.cs" />
-      <option value="$PROJECT_DIR$/Assets/StickTop.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStick.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager2.cs" />
+      <option value="$PROJECT_DIR$/Assets/StickTop.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerMovement.cs" />
     </changedPaths>
   </component>
@@ -97,7 +98,8 @@
       <option name="presentableId" value="Default" />
       <updated>1609368835751</updated>
       <workItem from="1609368840783" duration="38949000" />
-      <workItem from="1609438055394" duration="30306000" />
+      <workItem from="1609438055394" duration="35016000" />
+      <workItem from="1609489507602" duration="2260000" />
     </task>
     <servers />
   </component>

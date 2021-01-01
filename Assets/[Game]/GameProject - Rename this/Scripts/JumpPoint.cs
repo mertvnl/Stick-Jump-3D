@@ -8,7 +8,7 @@ public class JumpPoint : Singleton<JumpPoint>
 {
     public bool canRotate = false;
     public GameObject stickPivot;
-    public float rotateSpeed = 50f;
+    public float rotateSpeed = 200f;
     private void OnTriggerEnter(Collider other)
     {
         TheStick stick = other.GetComponent<TheStick>();
