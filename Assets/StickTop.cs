@@ -7,6 +7,9 @@ using UnityEngine;
 public class StickTop : MonoBehaviour
 {
     public HingeJoint joint;
+    public HingeJoint jointForStick;
+    public GameObject jointPoint;
+    public GameObject stick;
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Ground"))
@@ -16,9 +19,19 @@ public class StickTop : MonoBehaviour
             // PlayerMovement.Instance.transform.DOJump(PlayerMovement.Instance.transform.position * TheStick.Instance.transform.localScale.y, TheStick.Instance.transform.localScale.y * 5, 1, 5);
             
             Debug.Log("Create joint");
-            // joint = TheStick.Instance.gameObject.AddComponent<HingeJoint>();
-            // joint.connectedBody = other.rigidbody;
-            // joint.enableCollision = true;
+            var anchorPoint = Instantiate(jointPoint, transform.position, Quaternion.identity);
+            joint = anchorPoint.AddComponent<HingeJoint>();
+            jointForStick = anchorPoint.AddComponent<HingeJoint>();
+            // joint.anchor = transform.position;
+            joint.connectedBody = TheStick.Instance.gameObject.GetComponent<Rigidbody>();
+            jointForStick.connectedBody = stick.gameObject.GetComponent<Rigidbody>();
+            joint.enableCollision = true;
+            jointForStick.enableCollision = true;
+            joint.axis = new Vector3(0, 0, 1);
+            jointForStick.axis = new Vector3(0, 0, 1);
+
+            TheStick.Instance.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 1, 1) * 1000 * TheStick.Instance.transform.localScale.y / 2;
+            
             TheStick.Instance.GetComponent<Rigidbody>().isKinematic = false;
             TheStick.Instance.GetComponent<CapsuleCollider>().isTrigger = false;
             Rigidbody[] rbArr = TheStick.Instance.GetComponentsInChildren<Rigidbody>();

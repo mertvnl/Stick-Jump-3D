@@ -32,6 +32,7 @@ public class TheStick : Singleton<TheStick>
         {
             transform.position = rightHand.position;
         }
+
         
         //Scale up the stick, debug purposes
         if (Input.GetKeyDown(KeyCode.Space))

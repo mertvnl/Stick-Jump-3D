@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/JointController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ObstacleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStickController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,10 +49,11 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/FallingStickController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStickController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStick.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager2.cs" />
-      <option value="$PROJECT_DIR$/Assets/StickTop.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStick.cs" />
+      <option value="$PROJECT_DIR$/Assets/StickTop.cs" />
+      <option value="$PROJECT_DIR$/Assets/JointController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOdzeaQoTNbyCOfU1nIhensvfu" />
@@ -100,6 +102,7 @@
       <workItem from="1609368840783" duration="38949000" />
       <workItem from="1609438055394" duration="35016000" />
       <workItem from="1609489507602" duration="2260000" />
+      <workItem from="1609532945898" duration="6517000" />
     </task>
     <servers />
   </component>
