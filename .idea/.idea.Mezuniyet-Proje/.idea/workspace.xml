@@ -42,9 +42,7 @@
       <option value="$PROJECT_DIR$/Assets/StickPivotController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/CollectibleStick.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/StickController.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/FallingStickController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStickController.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager2.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStick.cs" />
       <option value="$PROJECT_DIR$/Assets/StickTop.cs" />
@@ -56,6 +54,8 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/ThirdPartyTools/Joystick Pack/Scripts/Base/Joystick.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/FallingStickController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOdzeaQoTNbyCOfU1nIhensvfu" />
@@ -105,7 +105,7 @@
       <workItem from="1609438055394" duration="35016000" />
       <workItem from="1609489507602" duration="2260000" />
       <workItem from="1609532945898" duration="9882000" />
-      <workItem from="1609551488044" duration="4358000" />
+      <workItem from="1609551488044" duration="6240000" />
     </task>
     <servers />
   </component>
