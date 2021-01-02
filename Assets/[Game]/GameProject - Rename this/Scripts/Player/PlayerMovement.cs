@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMovement : Singleton<PlayerMovement>
 {
     public float speed = 250f;
+    public float transformMovementSpeed = 20f;
     public bool canMove = false;
     private Rigidbody rigidbody;
     private Animator animator;
@@ -56,7 +57,8 @@ public class PlayerMovement : Singleton<PlayerMovement>
         if (GameManager.Instance.isGameStarted && canMove)
         {
             Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), Rigidbody.velocity.y / 10 , 1);
-            Rigidbody.velocity = dir * (speed * Time.fixedDeltaTime);
+            // Rigidbody.velocity = dir * (speed * Time.fixedDeltaTime);
+            transform.position += Vector3.forward * (transformMovementSpeed * Time.fixedDeltaTime);
             Animator.SetTrigger("Run");
         }
     }
@@ -69,7 +71,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
     IEnumerator JumpCo()
     {
         GetComponentInChildren<TrailRenderer>().enabled = true;
-        canMove = false;
+        // canMove = false;
         Animator.SetTrigger("Fly");
         GetComponent<CapsuleCollider>().isTrigger = true;
         Rigidbody.velocity = new Vector3(0,1,1) * TheStick.Instance.transform.localScale.y * 5;

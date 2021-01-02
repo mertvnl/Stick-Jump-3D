@@ -67,8 +67,8 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/LevelLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/ParticleManager.cs" />
       <option value="$PROJECT_DIR$/Assets/ThirdPartyTools/Joystick Pack/Scripts/Base/Joystick.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/UI/WinPanelButtons.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOdzeaQoTNbyCOfU1nIhensvfu" />
@@ -118,7 +118,7 @@
       <workItem from="1609438055394" duration="35016000" />
       <workItem from="1609489507602" duration="2260000" />
       <workItem from="1609532945898" duration="9882000" />
-      <workItem from="1609551488044" duration="22807000" />
+      <workItem from="1609551488044" duration="23435000" />
     </task>
     <servers />
   </component>
