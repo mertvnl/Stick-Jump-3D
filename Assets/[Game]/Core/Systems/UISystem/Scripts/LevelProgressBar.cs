@@ -5,26 +5,28 @@ using UnityEngine;
 
 public class LevelProgressBar : Panel
 {
-    private CanvasGroup canvasGroup;
+    private CanvasGroup canvasGroupPanel;
 
-    public CanvasGroup CanvasGroup
+    public CanvasGroup CanvasGroupPanel
     {
         get
         {
-            if (canvasGroup==null)
+            if (canvasGroupPanel==null)
             {
-                canvasGroup = GetComponentInParent<CanvasGroup>();
+                canvasGroupPanel = GetComponentInParent<CanvasGroup>();
             }
 
-            return canvasGroup;
+            return canvasGroupPanel;
         }
     }
     private void OnEnable()
     {
         EventManager.OnGameStart.AddListener(ShowPanel);
+        // EventManager.OnLevelStart.AddListener(ShowPanel);
     }
     private void OnDisable()
     {
         EventManager.OnGameStart.RemoveListener(ShowPanel);
+        // EventManager.OnLevelStart.RemoveListener(ShowPanel);
     }
 }

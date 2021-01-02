@@ -8,6 +8,6 @@ public class MainMenuStartButton : Panel
 {
     public void StartGame()
     {
-        EventManager.OnGameStart.Invoke();
+        EventManager.OnLevelStart.Invoke();
     }
 }

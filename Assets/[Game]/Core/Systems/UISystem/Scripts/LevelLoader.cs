@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelLoader : MonoBehaviour
+public class LevelLoader : Singleton<LevelLoader>
 {
     public float loadDelay = 1f;
     private Animator animator;
@@ -14,23 +14,11 @@ public class LevelLoader : MonoBehaviour
         get { return (animator == null) ? animator = GetComponent<Animator>() : animator; }
     }
 
-    private void OnEnable()
-    {
-        EventManager.OnLevelEnd.AddListener(LoadNextLevel);
-    }
-
-    private void OnDisable()
-    {
-        EventManager.OnLevelEnd.RemoveListener(LoadNextLevel);
-    }
 
     [Button]
     public void LoadNextLevel()
     {
-        if (GameManager.Instance.isGameStarted)
-        {
-            StartCoroutine(LoadLevelCo());
-        }
+        StartCoroutine(LoadLevelCo());
     }
 
 
@@ -47,6 +35,7 @@ public class LevelLoader : MonoBehaviour
         {
             yield return SceneManager.UnloadSceneAsync(currentLevel);
             yield return SceneManager.LoadSceneAsync(("Level01"), LoadSceneMode.Additive);
+            LevelManager.Instance.ResetLevelData();
             Scene loadedScene = SceneManager.GetSceneByName("Level01");
             SceneManager.SetActiveScene(loadedScene);
         }

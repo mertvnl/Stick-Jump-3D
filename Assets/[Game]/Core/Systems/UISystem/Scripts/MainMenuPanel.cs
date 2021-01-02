@@ -8,11 +8,11 @@ public class MainMenuPanel : Panel
 {
     private void OnEnable()
     {
-        EventManager.OnGameStart.AddListener(HidePanel);
+        EventManager.OnLevelStart.AddListener(HidePanel);
     }
 
     private void OnDisable()
     {
-        EventManager.OnGameStart.RemoveListener(HidePanel);
+        EventManager.OnLevelStart.RemoveListener(HidePanel);
     }
 }

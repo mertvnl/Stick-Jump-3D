@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 public class GameManager : Singleton<GameManager>
@@ -14,11 +15,11 @@ public class GameManager : Singleton<GameManager>
 
     private void OnEnable()
     {
-        EventManager.OnGameStart.AddListener(() => isGameStarted = true);
+        EventManager.OnLevelStart.AddListener(() => isGameStarted = true);
     }
     private void OnDisable()
     {
-        EventManager.OnGameStart.RemoveListener(() => isGameStarted = true);
+        EventManager.OnLevelStart.RemoveListener(() => isGameStarted = true);
     }
 
     private void Start()
@@ -27,5 +28,12 @@ public class GameManager : Singleton<GameManager>
         {
             Debug.LogError("GameData is not set, please set the game data");
         }
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    //Invoke OnGameStart event when a new level is loaded
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        EventManager.OnGameStart.Invoke();
     }
 }

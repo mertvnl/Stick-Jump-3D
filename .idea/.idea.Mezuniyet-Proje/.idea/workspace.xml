@@ -11,16 +11,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/JointController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ObstacleController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/CollectibleStick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/FallingStickController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/StickTop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/ParticleManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WinPanel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/CharacterControllerSystem/Joysticks/PlayerJoystickController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/CubeCut.cs" />
       <option value="$PROJECT_DIR$/Assets/EzySlice/Slicer.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Editor/InitializeScenes.cs" />
@@ -47,15 +44,29 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/TheStick.cs" />
       <option value="$PROJECT_DIR$/Assets/StickTop.cs" />
       <option value="$PROJECT_DIR$/Assets/JointController.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ScriptableObjects/GameData.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/TapToStartPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/TapToStartButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/ThirdPartyTools/Joystick Pack/Scripts/Base/Joystick.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/FallingStickController.cs" />
+      <option value="$PROJECT_DIR$/Assets/LevelProgressUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ScriptableObjects/GameData.cs" />
+      <option value="$PROJECT_DIR$/Assets/LevelProgressBarCalculator.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/MainMenuStartButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/MainMenuPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/CurrentLevelPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/TapToStartButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/ThirdPartyTools/Joystick Pack/Scripts/Base/Joystick.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/LevelProgressBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/ParticleManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/CharacterControllerSystem/Joysticks/PlayerJoystickController.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/EventManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/FailPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/WinPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/TapToStartPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/LevelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/LevelLoader.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOdzeaQoTNbyCOfU1nIhensvfu" />
@@ -105,7 +116,7 @@
       <workItem from="1609438055394" duration="35016000" />
       <workItem from="1609489507602" duration="2260000" />
       <workItem from="1609532945898" duration="9882000" />
-      <workItem from="1609551488044" duration="6240000" />
+      <workItem from="1609551488044" duration="21620000" />
     </task>
     <servers />
   </component>

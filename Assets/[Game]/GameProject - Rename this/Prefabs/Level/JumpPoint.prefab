@@ -68,4 +68,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canRotate: 0
   stickPivot: {fileID: 0}
-  rotateSpeed: 300
+  rotateSpeed: 100

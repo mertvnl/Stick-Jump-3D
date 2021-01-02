@@ -5,16 +5,15 @@ using UnityEngine;
 
 public class TapToStartPanel : Panel
 {
-    
-    
     private void OnEnable()
     {
-        EventManager.OnGameStart.AddListener(HidePanel);
+        EventManager.OnGameStart.AddListener(ShowPanel);
+        EventManager.OnLevelStart.AddListener(HidePanel);
     }
 
     private void OnDisable()
     {
-        EventManager.OnGameStart.RemoveListener(HidePanel);
-        
+        EventManager.OnGameStart.RemoveListener(ShowPanel);
+        EventManager.OnLevelStart.RemoveListener(HidePanel);
     }
 }

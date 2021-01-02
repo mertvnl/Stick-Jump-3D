@@ -43,12 +43,12 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     private void OnEnable()
     {
-        EventManager.OnGameStart.AddListener(() => this.gameObject.SetActive(true));
+        EventManager.OnLevelStart.AddListener(() => this.gameObject.SetActive(true));
     }
 
     private void OnDisable()
     {
-        EventManager.OnGameStart.AddListener(() => this.gameObject.SetActive(true));
+        EventManager.OnLevelStart.AddListener(() => this.gameObject.SetActive(true));
     }
 
     protected virtual void Start()

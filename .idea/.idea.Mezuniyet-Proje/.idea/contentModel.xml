@@ -43,28 +43,36 @@
           </e>
           <e p="GameProject - Rename this" t="Include">
             <e p="Scripts" t="Include">
-              <e p="CollectibleStick.cs" t="Include" />
-              <e p="FallingStickController.cs" t="Include" />
+              <e p="JointController.cs" t="Include" />
               <e p="JumpPoint.cs" t="Include" />
+              <e p="LevelProgressBarCalculator.cs" t="Include" />
               <e p="Managers" t="Include">
                 <e p="EventManager.cs" t="Include" />
                 <e p="GameManager.cs" t="Include" />
                 <e p="InitManager.cs" t="Include" />
                 <e p="LevelManager.cs" t="Include" />
                 <e p="Manager.cs" t="Include" />
+                <e p="ParticleManager.cs" t="Include" />
               </e>
               <e p="ObstacleController.cs" t="Include" />
+              <e p="Player" t="Include">
+                <e p="PlayerMovement.cs" t="Include" />
+              </e>
               <e p="PlayerController.cs" t="Include" />
-              <e p="PlayerMovement.cs" t="Include" />
               <e p="ScriptableObjects" t="Include">
                 <e p="GameData.cs" t="Include" />
               </e>
-              <e p="TheStick.cs" t="Include" />
-              <e p="TheStickController.cs" t="Include" />
+              <e p="Stick" t="Include">
+                <e p="CollectibleStick.cs" t="Include" />
+                <e p="FallingStickController.cs" t="Include" />
+                <e p="StickTop.cs" t="Include" />
+                <e p="TheStick.cs" t="Include" />
+                <e p="TheStickController.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>
-        <e p="JointController.cs" t="Include" />
+        <e p="FailPanel.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
@@ -81,8 +89,6 @@
             </e>
           </e>
         </e>
-        <e p="RollProgressed.shader" t="Include" />
-        <e p="StickTop.cs" t="Include" />
         <e p="ThirdPartyTools" t="Include">
           <e p="Confetti FX" t="Include">
             <e p="Readme.txt" t="Include" />
@@ -315,6 +321,7 @@
             </e>
           </e>
         </e>
+        <e p="WinPanel.cs" t="Include" />
       </e>
       <e p="LeanCommon.csproj" t="IncludeRecursive" />
       <e p="LeanTouch.csproj" t="IncludeRecursive" />

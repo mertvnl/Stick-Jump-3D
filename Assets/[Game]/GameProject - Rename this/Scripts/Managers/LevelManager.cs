@@ -16,7 +16,7 @@ public class LevelManager : Singleton<LevelManager>
     }
 
     [Button]
-    private void ResetLevelData()
+    public void ResetLevelData()
     {
         PlayerPrefs.DeleteKey("CurrentLevelIndex");
         currentLevelIndex = PlayerPrefs.GetInt("CurrentLevelIndex", 1);
@@ -24,9 +24,9 @@ public class LevelManager : Singleton<LevelManager>
     }
     
     [Button]
-    public void FinishLevel()
+    public void LoadNextLevel()
     {
-        EventManager.OnLevelEnd.Invoke();
+        LevelLoader.Instance.LoadNextLevel();
     }
     private void OnEnable()
     {

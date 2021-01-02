@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : Singleton<PlayerMovement>
 {
     public float speed = 250f;
-    public bool canMove = true;
+    public bool canMove = false;
     private Rigidbody rigidbody;
     private Animator animator;
     public Rigidbody Rigidbody
@@ -35,6 +35,22 @@ public class PlayerMovement : Singleton<PlayerMovement>
         }
     }
 
+    private void OnEnable()
+    {
+        EventManager.OnLevelStart.AddListener(()=> canMove = true);
+        EventManager.OnLevelEnd.AddListener(FinishLevel);
+        EventManager.OnLevelFail.AddListener(Die);
+        EventManager.OnGameStart.AddListener(InitializePlayer);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnLevelStart.RemoveListener(()=> canMove = true);
+        EventManager.OnLevelEnd.RemoveListener(FinishLevel);
+        EventManager.OnLevelFail.RemoveListener(Die);
+        EventManager.OnGameStart.RemoveListener(InitializePlayer);
+    }
+    
     private void FixedUpdate()
     {
         if (GameManager.Instance.isGameStarted && canMove)
@@ -43,7 +59,6 @@ public class PlayerMovement : Singleton<PlayerMovement>
             Rigidbody.velocity = dir * (speed * Time.fixedDeltaTime);
             Animator.SetTrigger("Run");
         }
-        
     }
 
     public void Jump()
@@ -67,8 +82,32 @@ public class PlayerMovement : Singleton<PlayerMovement>
     {
         if (other.gameObject.CompareTag("FinishPlatform"))
         {
-            Animator.SetTrigger("Dance");
-            transform.LookAt(Vector3.back);
+            EventManager.OnLevelEnd.Invoke();
         }
+    }
+
+    private void InitializePlayer()
+    {
+        GameManager.Instance.gameData.currentPlayer = this.gameObject;
+        GameManager.Instance.gameData.fullDistance =
+            (JumpPoint.Instance.transform.position - transform.position).sqrMagnitude;
+    }
+
+    private void FinishLevel()
+    {
+        Animator.SetTrigger("Dance");
+        transform.LookAt(Vector3.back);
+        GameManager.Instance.isGameStarted = false;
+        canMove = false;
+    }
+
+    private void Die()
+    {
+        //TODO die
+        Debug.Log("die");
+        Animator.SetTrigger("Fail");
+        transform.LookAt(Vector3.back);
+        GameManager.Instance.isGameStarted = false;
+        canMove = false;
     }
 }

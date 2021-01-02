@@ -18,3 +18,7 @@ MonoBehaviour:
   levelSpeed: 0
   levelSpeedMultiplier: 0
   currentJoystick: {fileID: 0}
+  fallingStickSizeY: 4.2496734
+  fullDistance: 11363.8955
+  currentPlayer: {fileID: 0}
+  currentJumpPoint: {fileID: 0}

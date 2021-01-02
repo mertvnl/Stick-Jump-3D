@@ -8,16 +8,25 @@ public class JumpPoint : Singleton<JumpPoint>
 {
     public bool canRotate = false;
     public GameObject stickPivot;
-    public float rotateSpeed = 200f;
+    public float rotateSpeed = 100f;
+
+    private void OnEnable()
+    {
+        EventManager.OnGameStart.AddListener(()=>GameManager.Instance.gameData.currentJumpPoint = this.gameObject);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnGameStart.RemoveListener(()=>GameManager.Instance.gameData.currentJumpPoint = this.gameObject);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         TheStick stick = other.GetComponent<TheStick>();
         if (stick != null)
         {
             stickPivot = stick.gameObject;
-
             canRotate = true;
-            Debug.Log("rotate");
         }
     }
 
@@ -25,7 +34,7 @@ public class JumpPoint : Singleton<JumpPoint>
     {
         if (canRotate)
         {
-            stickPivot.transform.Rotate(Vector3.right * (200f * Time.fixedDeltaTime));
+            stickPivot.transform.Rotate(Vector3.right * (rotateSpeed * Time.fixedDeltaTime));
         }
     }
     

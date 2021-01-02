@@ -27,14 +27,14 @@ public class CurrentLevelPanel : Panel
     private void OnEnable()
     {
         EventManager.OnGameStart.AddListener(UpdateUI);
-        EventManager.OnGameStart.AddListener(ShowPanelAndTurnOffInteraction);
+        EventManager.OnLevelStart.AddListener(ShowPanelAndTurnOffInteraction);
         EventManager.OnLevelChange.AddListener(UpdateUI);
     }
 
     private void OnDisable()
     {
         EventManager.OnGameStart.RemoveListener(UpdateUI);
-        EventManager.OnGameStart.RemoveListener(ShowPanelAndTurnOffInteraction);
+        EventManager.OnLevelStart.RemoveListener(ShowPanelAndTurnOffInteraction);
         EventManager.OnLevelChange.RemoveListener(UpdateUI);
     }
 

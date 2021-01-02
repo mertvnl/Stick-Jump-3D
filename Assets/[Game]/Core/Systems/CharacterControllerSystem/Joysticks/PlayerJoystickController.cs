@@ -38,7 +38,10 @@ public class PlayerJoystickController : MonoBehaviour
     
     private void FixedUpdate()
     {
-        Vector3 dir = new Vector3(Joystick.Horizontal, 0, 0);
-        transform.position += dir * (speed * Time.fixedDeltaTime);
+        if (PlayerMovement.Instance.canMove)
+        {
+            Vector3 dir = new Vector3(Joystick.Horizontal, 0, 0);
+            transform.position += dir * (speed * Time.fixedDeltaTime);
+        }
     }
 }

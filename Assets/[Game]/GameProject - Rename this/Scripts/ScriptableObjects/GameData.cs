@@ -27,4 +27,9 @@ public class GameData : ScriptableObject
     [ReadOnly]
     public float fallingStickSizeY;
 
+    public float fullDistance;
+
+    public GameObject currentPlayer;
+    public GameObject currentJumpPoint;
+
 }
