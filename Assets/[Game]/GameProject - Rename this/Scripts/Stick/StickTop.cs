@@ -18,7 +18,6 @@ public class StickTop : MonoBehaviour
             // PlayerMovement.Instance.transform.DOMoveZ(TheStick.Instance.transform.localScale.y * transform.position.z, 4);
             // PlayerMovement.Instance.transform.DOJump(PlayerMovement.Instance.transform.position * TheStick.Instance.transform.localScale.y, TheStick.Instance.transform.localScale.y * 5, 1, 5);
             
-            Debug.Log("Create joint");
             var anchorPoint = Instantiate(jointPoint, transform.position, Quaternion.identity);
             joint = anchorPoint.AddComponent<HingeJoint>();
             jointForStick = anchorPoint.AddComponent<HingeJoint>();
@@ -38,7 +37,6 @@ public class StickTop : MonoBehaviour
             foreach (Rigidbody rb in rbArr)
             {
                 rb.constraints = RigidbodyConstraints.None;
-                Debug.Log(rb.gameObject.name);
             }
             // TheStick.Instance.transform.DOJump(TheStick.Instance.transform.position + transform.forward * 5, 20, 1, 2);
             PlayerMovement.Instance.Jump();
