@@ -20,6 +20,12 @@ public class ParticleManager : Singleton<ParticleManager>
     [Button]
     void PlayConfetti()
     {
-        Instantiate(confettiPrefab, PlayerMovement.Instance.transform.position, Quaternion.identity);
+        StartCoroutine(PlayConfettiCo());
+    }
+
+    IEnumerator PlayConfettiCo()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Instantiate(confettiPrefab, PlayerMovement.Instance.transform.position + Vector3.up, Quaternion.identity);
     }
 }

@@ -69,9 +69,9 @@ public class PlayerMovement : Singleton<PlayerMovement>
     IEnumerator JumpCo()
     {
         GetComponentInChildren<TrailRenderer>().enabled = true;
+        canMove = false;
         Animator.SetTrigger("Fly");
         GetComponent<CapsuleCollider>().isTrigger = true;
-        canMove = false;
         Rigidbody.velocity = new Vector3(0,1,1) * TheStick.Instance.transform.localScale.y * 5;
         TheStick.Instance.isJumping = false;
         yield return new WaitForSeconds(1f);

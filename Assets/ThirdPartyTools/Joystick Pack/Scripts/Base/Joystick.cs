@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
@@ -43,17 +44,20 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     private void OnEnable()
     {
-        EventManager.OnLevelStart.AddListener(() => this.gameObject.SetActive(true));
+        EventManager.OnLevelStart.AddListener(() => this.gameObject.GetComponentInChildren<Image>().raycastTarget = true);
+        EventManager.OnLevelEnd.AddListener(() => this.gameObject.GetComponentInChildren<Image>().raycastTarget = false);
+        EventManager.OnGameStart.AddListener(() => this.gameObject.GetComponentInChildren<Image>().raycastTarget = false);
     }
 
     private void OnDisable()
     {
-        EventManager.OnLevelStart.AddListener(() => this.gameObject.SetActive(true));
+        EventManager.OnLevelStart.RemoveListener(() => this.gameObject.GetComponentInChildren<Image>().raycastTarget = true);
+        EventManager.OnLevelEnd.RemoveListener(() => this.gameObject.GetComponentInChildren<Image>().raycastTarget = false);
+        EventManager.OnGameStart.RemoveListener(() => this.gameObject.GetComponentInChildren<Image>().raycastTarget = false);
     }
 
     protected virtual void Start()
     {
-        this.gameObject.SetActive(false);
         GameManager.Instance.gameData.currentJoystick = this;
         HandleRange = handleRange;
         DeadZone = deadZone;

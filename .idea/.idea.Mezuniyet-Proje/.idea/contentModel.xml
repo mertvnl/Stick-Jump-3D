@@ -69,6 +69,9 @@
                 <e p="TheStick.cs" t="Include" />
                 <e p="TheStickController.cs" t="Include" />
               </e>
+              <e p="UI" t="Include">
+                <e p="WinPanelButtons.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>
