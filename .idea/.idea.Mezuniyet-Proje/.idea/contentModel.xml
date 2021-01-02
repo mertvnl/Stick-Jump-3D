@@ -59,14 +59,11 @@
               <e p="ScriptableObjects" t="Include">
                 <e p="GameData.cs" t="Include" />
               </e>
-              <e p="StickController.cs" t="Include" />
-              <e p="StickPivotController.cs" t="Include" />
+              <e p="TheStick.cs" t="Include" />
+              <e p="TheStickController.cs" t="Include" />
             </e>
-            <e p="TheStick.cs" t="Include" />
-            <e p="TheStickController.cs" t="Include" />
           </e>
         </e>
-        <e p="BendMesh.shader" t="Include" />
         <e p="JointController.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
@@ -84,6 +81,7 @@
             </e>
           </e>
         </e>
+        <e p="RollProgressed.shader" t="Include" />
         <e p="StickTop.cs" t="Include" />
         <e p="ThirdPartyTools" t="Include">
           <e p="Confetti FX" t="Include">

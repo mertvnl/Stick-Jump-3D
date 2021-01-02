@@ -7,7 +7,7 @@ public class JointController : MonoBehaviour
 {
     void Start()
     {
-        transform.DORotate(new Vector3(100, 0, 0), 0.5f);
+        transform.DORotate(new Vector3(100, 0, 0), 0.8f);
     }
 
 }

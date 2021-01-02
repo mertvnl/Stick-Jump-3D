@@ -25,7 +25,7 @@ public class JumpPoint : Singleton<JumpPoint>
     {
         if (canRotate)
         {
-            stickPivot.transform.Rotate(Vector3.right * (rotateSpeed * Time.fixedDeltaTime));
+            stickPivot.transform.Rotate(Vector3.right * (200f * Time.fixedDeltaTime));
         }
     }
     

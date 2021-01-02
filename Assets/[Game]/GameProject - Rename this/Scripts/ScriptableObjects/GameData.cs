@@ -23,8 +23,7 @@ public class GameData : ScriptableObject
     public float levelSpeedMultiplier;
 
     [Header("Joystick Data")] public Joystick currentJoystick;
-
-    [Header("Stick Data")] public StickController playerStick; 
+    
     [ReadOnly]
     public float fallingStickSizeY;
 
