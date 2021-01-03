@@ -266,3 +266,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   confettiPrefab: {fileID: 1620116211597326, guid: 1805b6a59d8bf1e4fabb266117b0e2cb,
     type: 3}
+  stickCollectPrefab: {fileID: 8542340175775443346, guid: 0b1428a2812c77e4f8859aa519d4b9c5,
+    type: 3}
+  stickCutEffectPrefab: {fileID: 1260334799937022, guid: 2b28f2fdc5a65964f96ea4d2b9d6ca63,
+    type: 3}
+  playerJumpEffectPrefab: {fileID: 1173262663564242, guid: f81ea73a47d926143906b9d543948dc0,
+    type: 3}
+  speedEffectPrefab: {fileID: 5645583447684476747, guid: a5ab63a35f6e0a84393592a263843d71,
+    type: 3}

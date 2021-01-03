@@ -32,4 +32,6 @@ public class GameData : ScriptableObject
     public GameObject currentPlayer;
     public GameObject currentJumpPoint;
 
+    public int score;
+
 }

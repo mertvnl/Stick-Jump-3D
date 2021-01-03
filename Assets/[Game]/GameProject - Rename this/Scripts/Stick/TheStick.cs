@@ -69,6 +69,7 @@ public class TheStick : Singleton<TheStick>
     public void StickCut(GameObject obstacle)
     {
         float offset = StickTop.position.y - obstacle.gameObject.transform.position.y;
+        ParticleManager.Instance.PlayStickCutEffect();
         GameManager.Instance.gameData.fallingStickSizeY = offset;
         Vector3 newStickSize = new Vector3(0, offset / 2, 0);
         // transform.position -= newStickSize;

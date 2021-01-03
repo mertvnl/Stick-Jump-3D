@@ -12,6 +12,7 @@ public class CollectibleStick : MonoBehaviour
         {
             stick.StickUp();
             Destroy(gameObject);
+            ParticleManager.Instance.PlayStickCollect();
         }
     }
 }

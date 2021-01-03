@@ -42,6 +42,10 @@ public class PlayerJoystickController : MonoBehaviour
         {
             Vector3 dir = new Vector3(Joystick.Horizontal, 0, 0);
             transform.position += dir * (speed * Time.fixedDeltaTime);
+            
+            Vector3 clampedPosition = transform.position;
+            clampedPosition.x = Mathf.Clamp(clampedPosition.x, -6, 6);
+            transform.position = clampedPosition;
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public class StickTop : MonoBehaviour
+public class StickTop : Singleton<StickTop>
 {
     public HingeJoint joint;
     public HingeJoint jointForStick;

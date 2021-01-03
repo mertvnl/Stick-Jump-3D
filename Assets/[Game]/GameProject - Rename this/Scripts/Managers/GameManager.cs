@@ -16,10 +16,12 @@ public class GameManager : Singleton<GameManager>
     private void OnEnable()
     {
         EventManager.OnLevelStart.AddListener(() => isGameStarted = true);
+        EventManager.OnGameStart.AddListener(()=> gameData.score = 0);
     }
     private void OnDisable()
     {
         EventManager.OnLevelStart.RemoveListener(() => isGameStarted = true);
+        EventManager.OnGameStart.RemoveListener(()=> gameData.score = 0);
     }
 
     private void Start()

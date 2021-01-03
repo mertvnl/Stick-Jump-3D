@@ -8,6 +8,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
     public float speed = 250f;
     public float transformMovementSpeed = 20f;
     public bool canMove = false;
+    public bool canScore = false;
     private Rigidbody rigidbody;
     private Animator animator;
     public Rigidbody Rigidbody
@@ -61,6 +62,12 @@ public class PlayerMovement : Singleton<PlayerMovement>
             transform.position += Vector3.forward * (transformMovementSpeed * Time.fixedDeltaTime);
             Animator.SetTrigger("Run");
         }
+
+        if (canScore)
+        {
+            GameManager.Instance.gameData.score++;
+        }
+
     }
 
     public void Jump()
@@ -70,7 +77,11 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     IEnumerator JumpCo()
     {
+        ParticleManager.Instance.PlayPlayerJumpEffect();
+        Camera.main.transform.GetChild(0).gameObject.SetActive(true);
+        // ParticleManager.Instance.PlaySpeedEffect();
         GetComponentInChildren<TrailRenderer>().enabled = true;
+        canScore = true;
         // canMove = false;
         Animator.SetTrigger("Fly");
         GetComponent<CapsuleCollider>().isTrigger = true;
@@ -86,6 +97,12 @@ public class PlayerMovement : Singleton<PlayerMovement>
         {
             EventManager.OnLevelEnd.Invoke();
         }
+
+        //Fail olduğunda invoke
+        // if (other.gameObject.CompareTag("FailPlatform"))
+        // {
+        //     EventManager.OnLevelFail.Invoke();
+        // }
     }
 
     private void InitializePlayer()
@@ -101,6 +118,8 @@ public class PlayerMovement : Singleton<PlayerMovement>
         transform.LookAt(Vector3.back);
         GameManager.Instance.isGameStarted = false;
         canMove = false;
+        canScore = false;
+        Camera.main.transform.GetChild(0).gameObject.SetActive(false);
     }
 
     private void Die()

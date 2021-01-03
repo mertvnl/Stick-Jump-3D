@@ -25,6 +25,7 @@
                   <e p="CurrentLevel.cs" t="Include" />
                   <e p="CurrentLevelPanel.cs" t="Include" />
                   <e p="CurrentLevelPanelText.cs" t="Include" />
+                  <e p="EmojiManager.cs" t="Include" />
                   <e p="LevelLoader.cs" t="Include" />
                   <e p="LevelProgressBar.cs" t="Include" />
                   <e p="LevelProgressBarText.cs" t="Include" />
@@ -43,6 +44,7 @@
           </e>
           <e p="GameProject - Rename this" t="Include">
             <e p="Scripts" t="Include">
+              <e p="FailPanel.cs" t="Include" />
               <e p="JointController.cs" t="Include" />
               <e p="JumpPoint.cs" t="Include" />
               <e p="LevelProgressBarCalculator.cs" t="Include" />
@@ -59,6 +61,8 @@
                 <e p="PlayerMovement.cs" t="Include" />
               </e>
               <e p="PlayerController.cs" t="Include" />
+              <e p="ScorePanel.cs" t="Include" />
+              <e p="ScoreText.cs" t="Include" />
               <e p="ScriptableObjects" t="Include">
                 <e p="GameData.cs" t="Include" />
               </e>
@@ -72,10 +76,10 @@
               <e p="UI" t="Include">
                 <e p="WinPanelButtons.cs" t="Include" />
               </e>
+              <e p="WinPanel.cs" t="Include" />
             </e>
           </e>
         </e>
-        <e p="FailPanel.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
@@ -95,6 +99,55 @@
         <e p="ThirdPartyTools" t="Include">
           <e p="Confetti FX" t="Include">
             <e p="Readme.txt" t="Include" />
+          </e>
+          <e p="EffectExamples" t="Include">
+            <e p="Shared" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="SurfaceShader_VC.shader" t="Include" />
+              </e>
+            </e>
+            <e p="TutorialInfo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="ReadmeEditor.cs" t="Include" />
+                </e>
+                <e p="Readme.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Epic Toon FX" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ETFXButtonScript.cs" t="Include" />
+                <e p="ETFXFireProjectile.cs" t="Include" />
+                <e p="ETFXLoopScript.cs" t="Include" />
+                <e p="ETFXMouseOrbit.cs" t="Include" />
+                <e p="ETFXProjectileScript.cs" t="Include" />
+                <e p="ETFXSceneManager.cs" t="Include" />
+                <e p="ETFXTarget.cs" t="Include" />
+                <e p="VFX Library" t="Include">
+                  <e p="ParticleEffectsLibrary.cs" t="Include" />
+                  <e p="PEButtonScript.cs" t="Include" />
+                  <e p="UICanvasManager.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Prefabs" t="Include">
+              <e p="Combat" t="Include">
+                <e p="Combat FX.txt" t="Include" />
+              </e>
+              <e p="Environment" t="Include">
+                <e p="Environment FX.txt" t="Include" />
+              </e>
+              <e p="Interactive" t="Include">
+                <e p="Interactive FX.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="ETFXLightFade.cs" t="Include" />
+              <e p="ETFXPitchRandomizer.cs" t="Include" />
+              <e p="ETFXRotation.cs" t="Include" />
+            </e>
           </e>
           <e p="Joystick Pack" t="Include">
             <e p="Examples" t="Include">
@@ -316,6 +369,11 @@
               <e p="Readme.txt" t="Include" />
             </e>
           </e>
+          <e p="SimpleFX" t="Include">
+            <e p="Materials" t="Include">
+              <e p="UnlitVertexColour_Alpha.shader" t="Include" />
+            </e>
+          </e>
           <e p="ToolbarScene" t="Include">
             <e p="Editor" t="Include">
               <e p="SceneSwitcher.cs" t="Include" />
@@ -324,7 +382,6 @@
             </e>
           </e>
         </e>
-        <e p="WinPanel.cs" t="Include" />
       </e>
       <e p="LeanCommon.csproj" t="IncludeRecursive" />
       <e p="LeanTouch.csproj" t="IncludeRecursive" />
