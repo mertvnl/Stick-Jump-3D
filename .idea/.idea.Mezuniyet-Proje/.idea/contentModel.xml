@@ -44,7 +44,6 @@
           </e>
           <e p="GameProject - Rename this" t="Include">
             <e p="Scripts" t="Include">
-              <e p="FailPanel.cs" t="Include" />
               <e p="JointController.cs" t="Include" />
               <e p="JumpPoint.cs" t="Include" />
               <e p="LevelProgressBarCalculator.cs" t="Include" />
@@ -61,8 +60,6 @@
                 <e p="PlayerMovement.cs" t="Include" />
               </e>
               <e p="PlayerController.cs" t="Include" />
-              <e p="ScorePanel.cs" t="Include" />
-              <e p="ScoreText.cs" t="Include" />
               <e p="ScriptableObjects" t="Include">
                 <e p="GameData.cs" t="Include" />
               </e>
@@ -74,9 +71,12 @@
                 <e p="TheStickController.cs" t="Include" />
               </e>
               <e p="UI" t="Include">
+                <e p="FailPanel.cs" t="Include" />
+                <e p="ScorePanel.cs" t="Include" />
+                <e p="ScoreText.cs" t="Include" />
+                <e p="WinPanel.cs" t="Include" />
                 <e p="WinPanelButtons.cs" t="Include" />
               </e>
-              <e p="WinPanel.cs" t="Include" />
             </e>
           </e>
         </e>

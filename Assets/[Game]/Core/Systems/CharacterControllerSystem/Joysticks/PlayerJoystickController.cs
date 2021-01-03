@@ -44,7 +44,7 @@ public class PlayerJoystickController : MonoBehaviour
             transform.position += dir * (speed * Time.fixedDeltaTime);
             
             Vector3 clampedPosition = transform.position;
-            clampedPosition.x = Mathf.Clamp(clampedPosition.x, -6, 6);
+            clampedPosition.x = Mathf.Clamp(clampedPosition.x, -6, 5.85f);
             transform.position = clampedPosition;
         }
     }
