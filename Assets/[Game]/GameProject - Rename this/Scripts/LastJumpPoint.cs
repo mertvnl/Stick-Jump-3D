@@ -4,11 +4,21 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public class JumpPoint : MonoBehaviour
+public class LastJumpPoint : Singleton<LastJumpPoint>
 {
     public bool canRotate = false;
     public GameObject stickPivot;
     public float rotateSpeed = 100f;
+
+    private void OnEnable()
+    {
+        EventManager.OnGameStart.AddListener(()=>GameManager.Instance.gameData.currentJumpPoint = this.gameObject);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnGameStart.RemoveListener(()=>GameManager.Instance.gameData.currentJumpPoint = this.gameObject);
+    }
 
     private void OnTriggerEnter(Collider other)
     {

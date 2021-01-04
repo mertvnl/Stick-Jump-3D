@@ -12,16 +12,13 @@ public class StickTop : Singleton<StickTop>
     public GameObject stick;
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("LevelPlatform") || other.gameObject.CompareTag("LastPlatform"))
         {
-            JumpPoint.Instance.canRotate = false;
-            // PlayerMovement.Instance.transform.DOMoveZ(TheStick.Instance.transform.localScale.y * transform.position.z, 4);
-            // PlayerMovement.Instance.transform.DOJump(PlayerMovement.Instance.transform.position * TheStick.Instance.transform.localScale.y, TheStick.Instance.transform.localScale.y * 5, 1, 5);
-            
+            // JumpPoint.Instance.canRotate = false;
+
             var anchorPoint = Instantiate(jointPoint, transform.position, Quaternion.identity);
             joint = anchorPoint.AddComponent<HingeJoint>();
             jointForStick = anchorPoint.AddComponent<HingeJoint>();
-            // joint.anchor = transform.position;
             joint.connectedBody = TheStick.Instance.gameObject.GetComponent<Rigidbody>();
             jointForStick.connectedBody = stick.gameObject.GetComponent<Rigidbody>();
             joint.enableCollision = true;
@@ -38,7 +35,6 @@ public class StickTop : Singleton<StickTop>
             {
                 rb.constraints = RigidbodyConstraints.None;
             }
-            // TheStick.Instance.transform.DOJump(TheStick.Instance.transform.position + transform.forward * 5, 20, 1, 2);
             PlayerMovement.Instance.Jump();
             GetComponentInParent<TheStick>().isJumping = true;
             GetComponentInParent<TheStick>().transform.parent = null;

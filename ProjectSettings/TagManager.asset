@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - FinishPlatform
   - DeadZone
+  - LevelPlatform
+  - LastPlatform
   layers:
   - Default
   - TransparentFX

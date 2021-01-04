@@ -47,6 +47,7 @@
             <e p="Scripts" t="Include">
               <e p="JointController.cs" t="Include" />
               <e p="JumpPoint.cs" t="Include" />
+              <e p="LastJumpPoint.cs" t="Include" />
               <e p="LevelProgressBarCalculator.cs" t="Include" />
               <e p="Managers" t="Include">
                 <e p="EventManager.cs" t="Include" />
@@ -97,6 +98,7 @@
             </e>
           </e>
         </e>
+        <e p="RightHand.cs" t="Include" />
         <e p="ThirdPartyTools" t="Include">
           <e p="Confetti FX" t="Include">
             <e p="Readme.txt" t="Include" />

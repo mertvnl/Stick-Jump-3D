@@ -318,6 +318,8 @@ MonoBehaviour:
   transformMovementSpeed: 12
   canMove: 1
   canScore: 0
+  stickPrefab: {fileID: 7643545709713250507, guid: c9ede3c0bd1ba0345bc156c2c0e443a0,
+    type: 3}
 --- !u!114 &2024137923401767123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8153062859547891130}
+  - component: {fileID: 1213235653243998668}
   m_Layer: 0
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
@@ -580,6 +583,18 @@ Transform:
   m_Father: {fileID: 5944261540609410180}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1213235653243998668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3491161367943524661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c56d8940c324944bf3aa19b6eb3ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3540225232245037808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,7 +1429,7 @@ PrefabInstance:
         type: 3}
       propertyPath: rightHand
       value: 
-      objectReference: {fileID: 8153062859547891130}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ede3c0bd1ba0345bc156c2c0e443a0, type: 3}
 --- !u!4 &8908580772745949920 stripped
