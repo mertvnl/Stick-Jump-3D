@@ -14,5 +14,16 @@ public class CollectibleStick : MonoBehaviour
             Destroy(gameObject);
             ParticleManager.Instance.PlayStickCollect();
         }
+
+        PlayerMovement player = other.GetComponent<PlayerMovement>();
+        if (player != null)
+        {
+            //Check if any run animation is playing. If so don't trigger the run animation to avoid any overlap
+            if (!player.Animator.GetCurrentAnimatorStateInfo(0).IsTag("Run"))
+            {
+                player.Animator.SetTrigger("Run");
+            }
+            
+        }
     }
 }

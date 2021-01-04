@@ -41,7 +41,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     private void OnEnable()
     {
-        EventManager.OnLevelStart.AddListener(CallOnStart);
+        EventManager.OnLevelStart.AddListener(CallOnLevelStart);
         EventManager.OnLevelEnd.AddListener(FinishLevel);
         EventManager.OnLevelFail.AddListener(Die);
         EventManager.OnGameStart.AddListener(InitializePlayer);
@@ -49,7 +49,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     private void OnDisable()
     {
-        EventManager.OnLevelStart.RemoveListener(CallOnStart);
+        EventManager.OnLevelStart.RemoveListener(CallOnLevelStart);
         EventManager.OnLevelEnd.RemoveListener(FinishLevel);
         EventManager.OnLevelFail.RemoveListener(Die);
         EventManager.OnGameStart.RemoveListener(InitializePlayer);
@@ -68,7 +68,6 @@ public class PlayerMovement : Singleton<PlayerMovement>
         {
             GameManager.Instance.gameData.score++;
         }
-
     }
 
     public void Jump()
@@ -87,13 +86,14 @@ public class PlayerMovement : Singleton<PlayerMovement>
         GetComponent<CapsuleCollider>().isTrigger = true;
         Rigidbody.velocity = new Vector3(0,1,2f) * TheStick.Instance.transform.localScale.y * 5;
         TheStick.Instance.isJumping = false;
-        
         yield return new WaitForSeconds(1f);
         Destroy(TheStick.Instance.gameObject);
+        CreateStick();
         GetComponent<CapsuleCollider>().isTrigger = false;
     }
 
     
+    //Platform interface'i oluştur.
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("FinishPlatform"))
@@ -103,18 +103,14 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
         if (other.gameObject.CompareTag("LevelPlatform"))
         {
-            Debug.Log("debug");
-            CreateStick();
-            Animator.SetTrigger("Run");
+            Animator.SetTrigger("RunWOstick");
             Camera.main.transform.GetChild(0).gameObject.SetActive(false);
             GetComponentInChildren<TrailRenderer>().enabled = false;
             canScore = false;
         }
         if (other.gameObject.CompareTag("LastPlatform"))
         {
-            Debug.Log("debug");
-            CreateStick();
-            Animator.SetTrigger("Run");
+            Animator.SetTrigger("RunWOstick");
             Camera.main.transform.GetChild(0).gameObject.SetActive(false);
             GetComponentInChildren<TrailRenderer>().enabled = false;
             canScore = false;
@@ -129,7 +125,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
         }
     }
 
-    private void CallOnStart()
+    private void CallOnLevelStart()
     {
         canMove = true;
         Animator.SetTrigger("Run");
@@ -144,6 +140,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
     private void FinishLevel()
     {
         Animator.SetTrigger("Dance");
+        Destroy(TheStick.Instance.gameObject);
         transform.LookAt(Vector3.back);
         GameManager.Instance.isGameStarted = false;
         canMove = false;
@@ -160,6 +157,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
         GameManager.Instance.isGameStarted = false;
         canMove = false;
         canScore = false;
+        Rigidbody.constraints = RigidbodyConstraints.FreezePositionZ;
     }
 
     [Button]

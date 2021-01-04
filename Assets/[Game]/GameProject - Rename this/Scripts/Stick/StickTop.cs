@@ -12,7 +12,7 @@ public class StickTop : Singleton<StickTop>
     public GameObject stick;
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("LevelPlatform") || other.gameObject.CompareTag("LastPlatform"))
+        if (other.gameObject.CompareTag("Jointable"))
         {
             // JumpPoint.Instance.canRotate = false;
 
@@ -25,7 +25,6 @@ public class StickTop : Singleton<StickTop>
             jointForStick.enableCollision = true;
             joint.axis = new Vector3(0, 0, 1);
             jointForStick.axis = new Vector3(0, 0, 1);
-
             TheStick.Instance.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 1, 1) * 1000 * TheStick.Instance.transform.localScale.y / 2;
             
             TheStick.Instance.GetComponent<Rigidbody>().isKinematic = false;

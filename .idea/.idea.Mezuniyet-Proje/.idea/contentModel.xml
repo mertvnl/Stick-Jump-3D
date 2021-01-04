@@ -62,6 +62,7 @@
                 <e p="PlayerMovement.cs" t="Include" />
               </e>
               <e p="PlayerController.cs" t="Include" />
+              <e p="RightHand.cs" t="Include" />
               <e p="ScriptableObjects" t="Include">
                 <e p="GameData.cs" t="Include" />
               </e>
@@ -98,7 +99,6 @@
             </e>
           </e>
         </e>
-        <e p="RightHand.cs" t="Include" />
         <e p="ThirdPartyTools" t="Include">
           <e p="Confetti FX" t="Include">
             <e p="Readme.txt" t="Include" />

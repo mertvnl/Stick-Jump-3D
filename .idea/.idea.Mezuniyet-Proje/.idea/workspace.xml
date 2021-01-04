@@ -57,7 +57,6 @@
       <option value="$PROJECT_DIR$/Assets/ScoreText.cs" />
       <option value="$PROJECT_DIR$/Assets/ScorePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/CollectibleStick.cs" />
       <option value="$PROJECT_DIR$/Assets/SpeedEffectController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/ParticleManager.cs" />
       <option value="$PROJECT_DIR$/Assets/EmojiManager.cs" />
@@ -67,8 +66,9 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/EmojiManager.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/TheStick.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/StickTop.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/LastJumpPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/StickTop.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/CollectibleStick.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
     </changedPaths>
   </component>

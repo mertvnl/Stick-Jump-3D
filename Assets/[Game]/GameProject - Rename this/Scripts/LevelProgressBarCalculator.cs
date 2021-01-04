@@ -47,7 +47,7 @@ public class LevelProgressBarCalculator : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (Player != null && JumpPoint != null && Player.transform.position.z < JumpPoint.transform.position.z)
+        if (Player != null && JumpPoint != null && Player.transform.position.z < JumpPoint.transform.position.z && GameManager.Instance.isGameStarted)
         {
             float newDistance = GetDistance();
             float progressValue = Mathf.InverseLerp(GameManager.Instance.gameData.fullDistance, 0f, newDistance);
