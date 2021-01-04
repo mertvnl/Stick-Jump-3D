@@ -67,9 +67,9 @@
       <option value="$PROJECT_DIR$/Assets/EmojiManager.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/CharacterControllerSystem/Joysticks/PlayerJoystickController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/EmojiManager.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/RestartButton.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/LevelLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/EmojiManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOdzeaQoTNbyCOfU1nIhensvfu" />

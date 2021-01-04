@@ -14,11 +14,13 @@ public class EmojiManager : MonoBehaviour
     private void OnEnable()
     {
         EventManager.OnLevelEnd.AddListener(SelectEmoji);
+        EventManager.OnLevelFail.AddListener(SelectEmoji);
     }
 
     private void OnDisable()
     {
         EventManager.OnLevelEnd.RemoveListener(SelectEmoji);
+        EventManager.OnLevelFail.RemoveListener(SelectEmoji);
     }
     [Button]
     public void SelectEmoji()
