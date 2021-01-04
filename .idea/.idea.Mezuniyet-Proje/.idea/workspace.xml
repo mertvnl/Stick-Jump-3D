@@ -14,12 +14,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/UI/WinPanelButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ObstacleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/RestartButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/ParticleManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/RayFire/Scripts/Classes/Rigid/RFDemolitionMesh.cs" />
-      <option value="$PROJECT_DIR$/Assets/BzKovSoft/ObjectSlicer/IBzSliceableAsync.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Slicer.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/SliceListener.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/SlicePls.cs" />
@@ -54,7 +53,6 @@
       <option value="$PROJECT_DIR$/Assets/WinPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/TapToStartPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/LevelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/LevelLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/ThirdPartyTools/Joystick Pack/Scripts/Base/Joystick.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/UI/WinPanelButtons.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ScriptableObjects/GameData.cs" />
@@ -67,8 +65,11 @@
       <option value="$PROJECT_DIR$/Assets/SpeedEffectController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/ParticleManager.cs" />
       <option value="$PROJECT_DIR$/Assets/EmojiManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/CharacterControllerSystem/Joysticks/PlayerJoystickController.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/EmojiManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/RestartButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/LevelLoader.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOdzeaQoTNbyCOfU1nIhensvfu" />

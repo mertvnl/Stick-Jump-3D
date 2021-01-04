@@ -97,12 +97,14 @@ public class PlayerMovement : Singleton<PlayerMovement>
         {
             EventManager.OnLevelEnd.Invoke();
         }
+    }
 
-        //Fail olduğunda invoke
-        // if (other.gameObject.CompareTag("FailPlatform"))
-        // {
-        //     EventManager.OnLevelFail.Invoke();
-        // }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("DeadZone"))
+        {
+            EventManager.OnLevelFail.Invoke();
+        }
     }
 
     private void InitializePlayer()
@@ -125,10 +127,11 @@ public class PlayerMovement : Singleton<PlayerMovement>
     private void Die()
     {
         //TODO die
-        Debug.Log("die");
-        Animator.SetTrigger("Fail");
-        transform.LookAt(Vector3.back);
+        GetComponentInChildren<TrailRenderer>().enabled = false;
+        Camera.main.transform.GetChild(0).gameObject.SetActive(false);
+        Animator.SetTrigger("Fall");
         GameManager.Instance.isGameStarted = false;
         canMove = false;
+        canScore = false;
     }
 }

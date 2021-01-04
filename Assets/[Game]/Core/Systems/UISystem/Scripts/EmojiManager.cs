@@ -10,7 +10,7 @@ public class EmojiManager : MonoBehaviour
 
     public List<GameObject> emojis = new List<GameObject>();
 
-    [Button]
+    
     private void OnEnable()
     {
         EventManager.OnLevelEnd.AddListener(SelectEmoji);
@@ -20,7 +20,7 @@ public class EmojiManager : MonoBehaviour
     {
         EventManager.OnLevelEnd.RemoveListener(SelectEmoji);
     }
-
+    [Button]
     public void SelectEmoji()
     {
         int randomEmoji = Random.Range(0, emojis.Count);

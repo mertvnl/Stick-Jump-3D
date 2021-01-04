@@ -33,6 +33,7 @@
                   <e p="MainMenuStartButton.cs" t="Include" />
                   <e p="NextLevel.cs" t="Include" />
                   <e p="Panel.cs" t="Include" />
+                  <e p="RestartButton.cs" t="Include" />
                   <e p="TapToStartButton.cs" t="Include" />
                   <e p="TapToStartPanel.cs" t="Include" />
                 </e>
@@ -99,21 +100,6 @@
         <e p="ThirdPartyTools" t="Include">
           <e p="Confetti FX" t="Include">
             <e p="Readme.txt" t="Include" />
-          </e>
-          <e p="EffectExamples" t="Include">
-            <e p="Shared" t="Include">
-              <e p="Shaders" t="Include">
-                <e p="SurfaceShader_VC.shader" t="Include" />
-              </e>
-            </e>
-            <e p="TutorialInfo" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="Editor" t="Include">
-                  <e p="ReadmeEditor.cs" t="Include" />
-                </e>
-                <e p="Readme.cs" t="Include" />
-              </e>
-            </e>
           </e>
           <e p="Epic Toon FX" t="Include">
             <e p="Demo" t="Include">

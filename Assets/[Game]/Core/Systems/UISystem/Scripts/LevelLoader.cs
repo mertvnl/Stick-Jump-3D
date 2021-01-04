@@ -51,4 +51,25 @@ public class LevelLoader : Singleton<LevelLoader>
         Animator.SetTrigger("End");
     }
     
+    [Button]
+    public void LoadCurrentLevel()
+    {
+        StartCoroutine(LoadCurrentLevelCo());
+    }
+
+
+    private IEnumerator LoadCurrentLevelCo()
+    {
+        Animator.SetTrigger("Start");
+        yield return new WaitForSeconds(loadDelay);
+
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+
+        yield return SceneManager.UnloadSceneAsync(currentLevel);
+        yield return SceneManager.LoadSceneAsync((currentLevel), LoadSceneMode.Additive);
+        Scene loadedScene = SceneManager.GetSceneByBuildIndex(currentLevel);
+        SceneManager.SetActiveScene(loadedScene);
+        Animator.SetTrigger("End");
+    }
+    
 }
