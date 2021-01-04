@@ -157,7 +157,6 @@ public class PlayerMovement : Singleton<PlayerMovement>
         GameManager.Instance.isGameStarted = false;
         canMove = false;
         canScore = false;
-        Rigidbody.constraints = RigidbodyConstraints.FreezePositionZ;
     }
 
     [Button]

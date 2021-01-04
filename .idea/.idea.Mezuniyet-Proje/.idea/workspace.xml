@@ -19,7 +19,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/SliceListener.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/SlicePls.cs" />
       <option value="$PROJECT_DIR$/Assets/UnityVRExperiments-master/Assets/SteamVR/Scripts/SteamVR_Stats.cs" />
       <option value="$PROJECT_DIR$/Assets/UnityVRExperiments-master/Assets/SteamVR/Scripts/SteamVR_StatusText.cs" />
@@ -69,6 +68,7 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/LastJumpPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/StickTop.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/CollectibleStick.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/LevelProgressBarCalculator.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
     </changedPaths>
   </component>
