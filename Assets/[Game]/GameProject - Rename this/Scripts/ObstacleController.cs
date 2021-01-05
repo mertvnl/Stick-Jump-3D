@@ -33,35 +33,31 @@ public class ObstacleController : MonoBehaviour
             transform.RotateAround(transform.position, Vector3.up, 1 * Time.fixedDeltaTime * RotateSpeed);
         }
 
-        if (CanMoveRight)
+        if (GameManager.Instance.isGameStarted)
         {
-            transform.DOMoveX(MoveDistance, MoveTime).OnComplete(() => CanMoveLeft = true);
-            CanMoveRight = false;
+            if (CanMoveRight)
+            {
+                transform.DOMoveX(MoveDistance, MoveTime).OnComplete(() => CanMoveLeft = true);
+                CanMoveRight = false;
+            }
 
+            if (CanMoveLeft)
+            {
+                transform.DOMoveX(-MoveDistance, MoveTime).OnComplete(() => CanMoveRight = true);
+                CanMoveLeft = false;
+            }
 
-        }
+            if (CanMoveForward)
+            {
+                transform.DOMoveZ(MoveDistanceBack, MoveTime).OnComplete(() => CanMoveBack = true);
+                CanMoveForward = false;
+            }
 
-        if (CanMoveLeft)
-        {
-            transform.DOMoveX(-MoveDistance, MoveTime).OnComplete(() => CanMoveRight = true);
-            CanMoveLeft = false;
-
-        }
-
-        if (CanMoveForward)
-        {
-            transform.DOMoveZ(MoveDistanceBack, MoveTime).OnComplete(() => CanMoveBack = true);
-            CanMoveForward = false;
-
-
-        }
-
-        if (CanMoveBack)
-        {
-            transform.DOMoveZ(MoveDistanceForward, MoveTime).OnComplete(() => CanMoveForward = true);
-            CanMoveBack = false;
-
-
+            if (CanMoveBack)
+            {
+                transform.DOMoveZ(MoveDistanceForward, MoveTime).OnComplete(() => CanMoveForward = true);
+                CanMoveBack = false;
+            }
         }
     }
 }
