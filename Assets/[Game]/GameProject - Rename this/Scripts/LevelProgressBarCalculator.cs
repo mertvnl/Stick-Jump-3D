@@ -9,6 +9,16 @@ public class LevelProgressBarCalculator : MonoBehaviour
     public Image fillImage;
     private GameObject player;
 
+    private void OnEnable()
+    {
+        EventManager.OnGameStart.AddListener(()=> fillImage.fillAmount = 0);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnGameStart.RemoveListener(()=> fillImage.fillAmount = 0);
+    }
+
     public GameObject Player
     {
         get

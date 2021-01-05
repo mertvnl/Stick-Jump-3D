@@ -107,6 +107,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
             Camera.main.transform.GetChild(0).gameObject.SetActive(false);
             GetComponentInChildren<TrailRenderer>().enabled = false;
             canScore = false;
+            Rigidbody.velocity = Vector3.zero;
         }
         if (other.gameObject.CompareTag("LastPlatform"))
         {
@@ -114,6 +115,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
             Camera.main.transform.GetChild(0).gameObject.SetActive(false);
             GetComponentInChildren<TrailRenderer>().enabled = false;
             canScore = false;
+            Rigidbody.velocity = Vector3.zero;
         }
     }
 
