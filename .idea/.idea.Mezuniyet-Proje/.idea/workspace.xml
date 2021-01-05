@@ -24,7 +24,6 @@
       <option value="$PROJECT_DIR$/Assets/UnityVRExperiments-master/Assets/SteamVR/Scripts/SteamVR_StatusText.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/SlicerController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Collision.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ObstacleController.cs" />
       <option value="$PROJECT_DIR$/Assets/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/StickHolder.cs" />
       <option value="$PROJECT_DIR$/Assets/StickPivotController.cs" />
@@ -70,6 +69,7 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/CollectibleStick.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/LevelProgressBarCalculator.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ObstacleController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOdzeaQoTNbyCOfU1nIhensvfu" />
@@ -131,7 +131,7 @@
       <workItem from="1609610693500" duration="1232000" />
       <workItem from="1609613757908" duration="170000" />
       <workItem from="1609632677300" duration="12142000" />
-      <workItem from="1609803651290" duration="1268000" />
+      <workItem from="1609803651290" duration="1696000" />
     </task>
     <servers />
   </component>
