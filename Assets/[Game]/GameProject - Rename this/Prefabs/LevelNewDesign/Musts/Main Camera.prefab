@@ -33,7 +33,7 @@ Transform:
   - {fileID: 7319759199197034810}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15.000001, y: 0, z: 0}
 --- !u!20 &6273948813189070745
 Camera:
   m_ObjectHideFlags: 0
@@ -43,7 +43,7 @@ Camera:
   m_GameObject: {fileID: 6273948813189070747}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.4746089, g: 0, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2

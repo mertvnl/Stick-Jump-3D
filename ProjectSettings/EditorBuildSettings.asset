@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/[Game]/GameProject - Rename this/Scenes/Level01.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/[Game]/GameProject - Rename this/Scenes/Level02.unity
+    guid: c93af92d8a0c8d5439d3a039a442c952
   m_configObjects: {}
