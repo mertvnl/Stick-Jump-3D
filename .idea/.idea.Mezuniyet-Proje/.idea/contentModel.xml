@@ -47,7 +47,7 @@
             <e p="Scripts" t="Include">
               <e p="JointController.cs" t="Include" />
               <e p="JumpPoint.cs" t="Include" />
-              <e p="LevelProgressBarCalculator.cs" t="Include" />
+              <e p="LastJumpPoint.cs" t="Include" />
               <e p="Managers" t="Include">
                 <e p="EventManager.cs" t="Include" />
                 <e p="GameManager.cs" t="Include" />
@@ -58,9 +58,10 @@
               </e>
               <e p="ObstacleController.cs" t="Include" />
               <e p="Player" t="Include">
+                <e p="PlayerController.cs" t="Include" />
                 <e p="PlayerMovement.cs" t="Include" />
+                <e p="RightHand.cs" t="Include" />
               </e>
-              <e p="PlayerController.cs" t="Include" />
               <e p="ScriptableObjects" t="Include">
                 <e p="GameData.cs" t="Include" />
               </e>
@@ -73,6 +74,7 @@
               </e>
               <e p="UI" t="Include">
                 <e p="FailPanel.cs" t="Include" />
+                <e p="LevelProgressBarCalculator.cs" t="Include" />
                 <e p="ScorePanel.cs" t="Include" />
                 <e p="ScoreText.cs" t="Include" />
                 <e p="WinPanel.cs" t="Include" />

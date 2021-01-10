@@ -4,21 +4,11 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public class JumpPoint : Singleton<JumpPoint>
+public class JumpPoint : MonoBehaviour
 {
     public bool canRotate = false;
     public GameObject stickPivot;
     public float rotateSpeed = 100f;
-
-    private void OnEnable()
-    {
-        EventManager.OnGameStart.AddListener(()=>GameManager.Instance.gameData.currentJumpPoint = this.gameObject);
-    }
-
-    private void OnDisable()
-    {
-        EventManager.OnGameStart.RemoveListener(()=>GameManager.Instance.gameData.currentJumpPoint = this.gameObject);
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -32,7 +22,7 @@ public class JumpPoint : Singleton<JumpPoint>
 
     private void FixedUpdate()
     {
-        if (canRotate)
+        if (canRotate && stickPivot != null)
         {
             stickPivot.transform.Rotate(Vector3.right * (rotateSpeed * Time.fixedDeltaTime));
         }

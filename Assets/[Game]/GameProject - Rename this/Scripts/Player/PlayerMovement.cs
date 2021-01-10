@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class PlayerMovement : Singleton<PlayerMovement>
@@ -9,6 +10,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
     public float transformMovementSpeed = 20f;
     public bool canMove = false;
     public bool canScore = false;
+    public GameObject stickPrefab;
     private Rigidbody rigidbody;
     private Animator animator;
     public Rigidbody Rigidbody
@@ -39,7 +41,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     private void OnEnable()
     {
-        EventManager.OnLevelStart.AddListener(()=> canMove = true);
+        EventManager.OnLevelStart.AddListener(CallOnLevelStart);
         EventManager.OnLevelEnd.AddListener(FinishLevel);
         EventManager.OnLevelFail.AddListener(Die);
         EventManager.OnGameStart.AddListener(InitializePlayer);
@@ -47,7 +49,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     private void OnDisable()
     {
-        EventManager.OnLevelStart.RemoveListener(()=> canMove = true);
+        EventManager.OnLevelStart.RemoveListener(CallOnLevelStart);
         EventManager.OnLevelEnd.RemoveListener(FinishLevel);
         EventManager.OnLevelFail.RemoveListener(Die);
         EventManager.OnGameStart.RemoveListener(InitializePlayer);
@@ -60,14 +62,12 @@ public class PlayerMovement : Singleton<PlayerMovement>
             Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), Rigidbody.velocity.y / 10 , 1);
             // Rigidbody.velocity = dir * (speed * Time.fixedDeltaTime);
             transform.position += Vector3.forward * (transformMovementSpeed * Time.fixedDeltaTime);
-            Animator.SetTrigger("Run");
         }
 
         if (canScore)
         {
             GameManager.Instance.gameData.score++;
         }
-
     }
 
     public void Jump()
@@ -79,7 +79,6 @@ public class PlayerMovement : Singleton<PlayerMovement>
     {
         ParticleManager.Instance.PlayPlayerJumpEffect();
         Camera.main.transform.GetChild(0).gameObject.SetActive(true);
-        // ParticleManager.Instance.PlaySpeedEffect();
         GetComponentInChildren<TrailRenderer>().enabled = true;
         canScore = true;
         // canMove = false;
@@ -88,14 +87,35 @@ public class PlayerMovement : Singleton<PlayerMovement>
         Rigidbody.velocity = new Vector3(0,1,2f) * TheStick.Instance.transform.localScale.y * 5;
         TheStick.Instance.isJumping = false;
         yield return new WaitForSeconds(1f);
+        Destroy(TheStick.Instance.gameObject);
+        CreateStick();
         GetComponent<CapsuleCollider>().isTrigger = false;
     }
 
+    
+    //Platform interface'i oluştur.
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("FinishPlatform"))
         {
             EventManager.OnLevelEnd.Invoke();
+        }
+
+        if (other.gameObject.CompareTag("LevelPlatform"))
+        {
+            Animator.SetTrigger("RunWOstick");
+            Camera.main.transform.GetChild(0).gameObject.SetActive(false);
+            GetComponentInChildren<TrailRenderer>().enabled = false;
+            canScore = false;
+            Rigidbody.velocity = Vector3.zero;
+        }
+        if (other.gameObject.CompareTag("LastPlatform"))
+        {
+            Animator.SetTrigger("RunWOstick");
+            Camera.main.transform.GetChild(0).gameObject.SetActive(false);
+            GetComponentInChildren<TrailRenderer>().enabled = false;
+            canScore = false;
+            Rigidbody.velocity = Vector3.zero;
         }
     }
 
@@ -107,16 +127,22 @@ public class PlayerMovement : Singleton<PlayerMovement>
         }
     }
 
+    private void CallOnLevelStart()
+    {
+        canMove = true;
+        Animator.SetTrigger("Run");
+    }
     private void InitializePlayer()
     {
         GameManager.Instance.gameData.currentPlayer = this.gameObject;
         GameManager.Instance.gameData.fullDistance =
-            (JumpPoint.Instance.transform.position - transform.position).sqrMagnitude;
+            (LastJumpPoint.Instance.transform.position - transform.position).sqrMagnitude;
     }
 
     private void FinishLevel()
     {
         Animator.SetTrigger("Dance");
+        Destroy(TheStick.Instance.gameObject);
         transform.LookAt(Vector3.back);
         GameManager.Instance.isGameStarted = false;
         canMove = false;
@@ -133,5 +159,11 @@ public class PlayerMovement : Singleton<PlayerMovement>
         GameManager.Instance.isGameStarted = false;
         canMove = false;
         canScore = false;
+    }
+
+    [Button]
+    public void CreateStick()
+    {
+        Instantiate(stickPrefab, transform.position, Quaternion.identity, transform);
     }
 }

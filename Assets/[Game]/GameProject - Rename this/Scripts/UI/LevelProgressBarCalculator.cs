@@ -9,6 +9,16 @@ public class LevelProgressBarCalculator : MonoBehaviour
     public Image fillImage;
     private GameObject player;
 
+    private void OnEnable()
+    {
+        EventManager.OnGameStart.AddListener(()=> fillImage.fillAmount = 0);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnGameStart.RemoveListener(()=> fillImage.fillAmount = 0);
+    }
+
     public GameObject Player
     {
         get
@@ -47,7 +57,7 @@ public class LevelProgressBarCalculator : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (Player != null && JumpPoint != null && Player.transform.position.z < JumpPoint.transform.position.z)
+        if (Player != null && JumpPoint != null && Player.transform.position.z < JumpPoint.transform.position.z && GameManager.Instance.isGameStarted)
         {
             float newDistance = GetDistance();
             float progressValue = Mathf.InverseLerp(GameManager.Instance.gameData.fullDistance, 0f, newDistance);

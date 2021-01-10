@@ -19,14 +19,11 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Slicer.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/SliceListener.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/SlicePls.cs" />
       <option value="$PROJECT_DIR$/Assets/UnityVRExperiments-master/Assets/SteamVR/Scripts/SteamVR_Stats.cs" />
       <option value="$PROJECT_DIR$/Assets/UnityVRExperiments-master/Assets/SteamVR/Scripts/SteamVR_StatusText.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/SlicerController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Collision.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ObstacleController.cs" />
       <option value="$PROJECT_DIR$/Assets/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/StickHolder.cs" />
       <option value="$PROJECT_DIR$/Assets/StickPivotController.cs" />
@@ -47,7 +44,6 @@
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/LevelProgressBar.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/EventManager.cs" />
       <option value="$PROJECT_DIR$/Assets/FailPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/WinPanel.cs" />
@@ -59,17 +55,21 @@
       <option value="$PROJECT_DIR$/Assets/ScoreText.cs" />
       <option value="$PROJECT_DIR$/Assets/ScorePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/CollectibleStick.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/TheStick.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/StickTop.cs" />
       <option value="$PROJECT_DIR$/Assets/SpeedEffectController.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Managers/ParticleManager.cs" />
       <option value="$PROJECT_DIR$/Assets/EmojiManager.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/CharacterControllerSystem/Joysticks/PlayerJoystickController.cs" />
-      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/RestartButton.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/LevelLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/[Game]/Core/Systems/UISystem/Scripts/EmojiManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/JumpPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/TheStick.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/LastJumpPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/StickTop.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Stick/CollectibleStick.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/Player/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/LevelProgressBarCalculator.cs" />
+      <option value="$PROJECT_DIR$/Assets/[Game]/GameProject - Rename this/Scripts/ObstacleController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOdzeaQoTNbyCOfU1nIhensvfu" />
@@ -131,6 +131,7 @@
       <workItem from="1609610693500" duration="1232000" />
       <workItem from="1609613757908" duration="170000" />
       <workItem from="1609632677300" duration="12142000" />
+      <workItem from="1609803651290" duration="2582000" />
     </task>
     <servers />
   </component>
